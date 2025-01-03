@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics | House of Thoughts</title>
+    <link rel="icon" href="images/webicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .article-item-others {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-image-others img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        
+        blockquote {
+            background: #e8e8e8;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            font-style: italic;
+            margin: 20px 0;
+            color: #555;
+            font-size: 18px;
+            text-align: left;
+        }
+        
+        .article-content-others h2 {
+            margin-bottom: 5px;
+            /* Adjust spacing below the title */
+        }
+        
+        .article-content-others .byline {
+            margin-bottom: 20px;
+            /* Increase spacing below the byline */
+            font-style: italic;
+            /* Optional: style for byline */
+            color: #000000;
+            /* Lighter text color for the byline */
+        }
+        
+        .article-content-others hr {
+            border: 0;
+            /* Remove default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Spacing below the line */
+        }
+        
+        .article-title {
+            font-size: 40px;
+            /* Larger font size for the title */
+            margin-bottom: 0px;
+            /* Reduce space between title and byline */
+            text-align: left;
+        }
+        
+        .byline {
+            font-size: 18px;
+            /* Smaller font size for the byline */
+            margin-top: 30px;
+            /* Space between byline and horizontal line */
+        }
+        
+        hr {
+            border: none;
+            /* Removes the default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Space after the line */
+        }
+        /* Assuming your title is within a <h2> tag, you can add a class or directly modify the <h2> tag in your CSS */
+        
+        h2 {
+            margin-top: 50px;
+            /* Increase or decrease as necessary */
+            margin-bottom: 40px;
+            /* Increase or decrease as necessary */
+            font-size: 38px;
+            /* Example size, adjust as needed */
+            /* Keeps the title centered */
+            font-family: "Quire Sans Pro Heavy";
+        }
+        
+        .article-content-others p {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            /* Include a fallback font */
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            color: #333;
+            /* Example color, adjust as needed */
+            line-height: 1.8;
+            /* Adjust line spacing for better readability */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            /* Spacing after each paragraph */
+            text-align: left;
+        }
+        
+        .article-content-others h1 {
+            font-family: Mencken Std Text Regular;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 44px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="date-info">
+                <p id="current-date"></p>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="House of Thoughts" class="logo-icon">
+                </a>
+                <h2>Researching and Promoting Practical Ideas for a Smarter Future</h2>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="food.html">FOOD</a></li>
+                    <li><a href="politics.html">POLITICS</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="economy.html">ECONOMY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="others.html">OTHERS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="politics-intro">
+            <div class="politics-container">
+
+                <h1>OTHERS</h1>
+
+            </div>
+            <div class="container">
+
+
+                <section class="article-list-others">
+                    <!-- Article 1 -->
+                    <div class="article-item-others">
+                        <div class="article-image-other">
+                            <img src="images/articleHOT3.jpg" alt="The Labubu" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        </div>
+                        <div class="article-content-others">
+                            <h1 class="article-title">“The Labubu Invasion” Labubu is taking over the world: over-consumerism and Hype Culture</h1>
+                            <p class="byline"><strong>By Isya Rohaili, 3/12/2024</strong></p>
+                            <hr>
+                            <!-- Horizontal line before the article starts -->
+
+                            <p>Exemplified by the Labubu craze, mindless consumerism shows just how wasteful, pricey, and unsustainable chasing fleeting trends can be. Like many hyped merchandise items, Labubu’s value is tied almost entirely to the buzz
+                                surrounding it. Its value, like that of many hyped products, is rooted less in intrinsic worth and more in the frenzy of social media and trend culture. This is driven by the desire for social validation and fear of missing
+                                out (FOMO), two powerful psychological drivers in the age of digital connectivity. However, as with any fad, the allure is temporary. Once the hype dies down—and it inevitably will—what was once highly coveted will likely
+                                become just another forgotten trinket, destined to gather dust on a shelf. With that, Labubu runs the risk of becoming just another victim of excessive consumerism—a representation of a society that values short-term excitement
+                                above long-term worth. This pattern raises important questions about the sustainability of such habits and the deeper societal implications of attaching value to what is, in essence, a product of hype.</p>
+
+                            <p>There is nothing inherently wrong with seeking out a unique or charming item to uplift your mood. Personal taste is subjective, and a small collectible can often bring genuine joy. However, it is crucial to approach such desires
+                                with mindfulness. Consider the following: Is this a genuine need, or am I merely succumbing to fleeting trends? Will this purchase offer lasting satisfaction or serve a practical purpose, or is it simply a momentary indulgence?
+                                By reflecting on these questions, individuals can make more intentional choices that align with their values and financial goals, fostering a healthier approach to consumer behavior.</p>
+
+                            <blockquote>
+                                "Material things are neither bad nor good," Burroughs comments. "It is the role and status they are accorded in one's life that can be problematic. The key is to find a balance: to appreciate what you have, but not at the expense of the things that really
+                                matter--your family, community and spirituality."
+                            </blockquote>
+
+                            <p>James E. Burroughs, PhD, an assistant professor of commerce at the McIntire School of Commerce at the University of Virginia, made remarks.</p>
+
+                            <p>Mindful consumerism is not about rejecting trends altogether but striking a meaningful balance. Avoiding the temptation to indulge in every new trend not only safeguards your financial stability but also plays a vital role
+                                in minimizing environmental impact and encouraging sustainable practices. By opting out of impulsive purchases driven by hype, individuals can redirect their resources toward more meaningful and lasting investments. This
+                                approach helps reduce the demand for overproduction, which is often a significant contributor to environmental degradation, while promoting a culture of thoughtful consumption that values quality over quantity.</p>
+
+                            <p>The "Labubu invasion" serves as a poignant reminder of the influence of hype culture and the need for deliberate, intentional decision-making. True fulfillment arises not from chasing collective trends but from cultivating
+                                a purposeful life, free from the unnecessary clutter of over-consumption.</p>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+
+
+            <div class="footer-info">
+                <p>SUBMIT YOUR OPINION!</p>
+                <form action="mailto:houseofthoughtsofficial@gmail.com" method="post" enctype="text/plain">
+                    <button type="submit">CLICK HERE</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="social-media">
+                    <a href="https://www.instagram.com/houseofthoughts_" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                    <a href="https://www.tiktok.com/@houseofthoughts1" target="_blank"><i class="fab fa-tiktok"></i> TIKTOK</a>
+                    <a href="https://twitter.com/HouseThoughts_" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="about.html">ABOUT </a></li>
+                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#">
+                    </i> Back to top<i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

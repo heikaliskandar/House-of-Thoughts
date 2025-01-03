@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Reset margin and padding for sections */
+
+.summarize-hot,
+.footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Remove default margin and padding from the body and sections */
+
+body,
+main,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Specific styling for sections to remove gaps */
+
+.summarize-hot {
+    margin-bottom: 0;
+}
+
+.footer {
+    margin-top: 0;
+}
+
+
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header Styles */
+
+.top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.date-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.logo img {
+    max-width: 200px;
+    /* Adjust size as needed */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 1PX;
+    background-color: #000000;
+    transition: color 0.3s;
+    left: 0px;
+}
+
+.logo h2 {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+
+/* Navigation Styles */
+
+.top-nav {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 1px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.top-nav ul li a:hover {
+    color: #666;
+}
+
+
+/* Article List Styles */
+
+.article-list {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: transform 0.2s;
+}
+
+.article-item:hover {
+    transform: scale(1.02);
+}
+
+.article-image {
+    flex: 0 0 100px;
+    margin-right: 20px;
+}
+
+.article-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.article-content {
+    flex-grow: 1;
+}
+
+.article-content h3 {
+    font-size: 20px;
+    margin: 0;
+    font-family: Mencken Std Text Regular;
+    color: #000000;
+    font-weight: bold;
+}
+
+.article-content p {
+    margin: 15px 0;
+    color: #262020;
+    font-size: 14px;
+    font-family: "Quire Sans Pro Heavy";
+}
+
+.article-content .read-more {
+    font-weight: bold;
+    text-decoration: none;
+    color: #D82121;
+    transition: color 0.3s;
+}
+
+.article-content .read-more:hover {
+    color: #004499;
+}
+
+
+/* View All Publications Styles */
+
+.view-publications {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.view-publications-link {
+    font-size: 25px;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.view-publications-link:hover {
+    color: #000000;
+}
+
+.custom-hr {
+    width: 80%;
+    /* Adjust the width to match the article container width */
+    margin: 20px auto;
+    /* Center it and add some vertical margin */
+    border: 0;
+    /* Remove default borders */
+    border-top: 1px solid #D3D3D3;
+    /* Add a gray line, change color if needed */
+}
+
+
+/* Summarize House of Thoughts Section Styles */
+
+.summarize-hot {
+    /* Set background color similar to page 1 */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    /* Adjust padding for space around content */
+    margin: 0;
+    /* Remove margin to avoid extra gaps */
+    position: relative;
+    /* Control inner element alignment */
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    /* Improves text rendering */
+    background-color: #ffffff;
+}
+
+.summarize-hot img {
+    width: 100px;
+    /* Set a fixed width for the logo */
+    margin-bottom: 20px;
+    /* Add space between the logo and the text */
+    background-color: #ffffff;
+}
+
+.summarize-hot h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    /* Add padding for space above the title */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    letter-spacing: 2px;
+    /* Add letter spacing for a polished look */
+}
+
+.summarize-hot p {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    /* Center align the paragraph text */
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    /* Adjust the gap between paragraphs */
+    line-height: 1;
+}
+
+.summarize-hot a.learn-more-link {
+    color: #000;
+    display: block;
+    text-align: center;
+    /* Center align the link */
+    margin-top: 0;
+    /* Remove extra gap between link and paragraph above */
+    margin-bottom: 20px;
+    /* Optional: adjust as needed */
+    line-height: 10;
+}
+
+.learn-more-link {
+    font-size: 16px;
+    font-style: italic;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.learn-more-link:hover {
+    color: #fff;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 30px 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+
+/* Style for the paragraph elements in the footer */
+
+.footer-info p {
+    font-size: 18px;
+    /* Adjust the font size for better alignment */
+    margin-bottom: 10px;
+    /* Reduce gap between paragraphs */
+    font-weight: 700;
+    /* Make text bold to match the style in the first page */
+    color: white;
+    /* Set the color to match the page 1 example */
+    text-align: left;
+    /* Ensure consistent alignment with other elements */
+}
+
+.footer-info h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-info form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Reduce the gap between form elements */
+    margin-top: 20px;
+    /* Decrease the top margin */
+}
+
+.footer-info input[type="email"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+
+.footer-info button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-info button:hover {
+    background-color: #004499;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-right: 200px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: px;
+    /* Add space between each item */
+    margin-bottom: px;
+    margin-left: px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ccc;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #ccc;
+}
+
+
+/* Back to Top Styles */
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #D82121;
+    color: #fff;
+    padding: 0px 10px;
+    text-align: center;
+    border-radius: px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Add spacing between the icon and text */
+}
+
+.back-to-top:hover {
+    background-color: #5a5951;
+}
+
+
+/*CSS FOR ABOUT.HTML */
+
+
+/* Adjust Introduction Section to Center Content */
+
+.about-us-intro {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.about-us-intro .intro-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-us-intro h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    font-family: Core Sans N SC 65 Bold;
+}
+
+.about-us-intro p {
+    font-size: 24px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+
+/* Adjust Founders Section */
+
+.founders-section {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.founders-container {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+.founder {
+    max-width: 300px;
+    text-align: center;
+}
+
+.founder1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures the images are cropped nicely to fill the given dimensions */
+}
+
+.founder2 img {
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    /* Ensures the images are cropped nicely to fill the given dimensions */
+}
+
+.founder h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.founder .title {
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+
+/* Contact Us Section Styles */
+
+.contact-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0066cc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-links a:hover {
+    color: #004499;
+}
+
+
+/* Existing styles here... */
+
+
+/* Media Query for Mobile View */
+
+@media screen and (max-width: 768px) {
+    /* Adjust header elements */
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        text-align: center;
+        /* Center-align content */
+    }
+    .logo {
+        margin-bottom: 10px;
+        /* Add space below the logo */
+    }
+    .top-nav ul {
+        flex-direction: column;
+        /* Stack navigation items vertically */
+        gap: 20px;
+        /* Increase gap between nav items */
+        padding: 10px 0;
+    }
+    /* Reposition main content elements */
+    .article-list {
+        padding: 10px;
+        flex-direction: column;
+        /* Stack articles vertically */
+    }
+    .article-item {
+        flex-direction: column;
+        /* Stack image and text vertically */
+        align-items: center;
+        text-align: center;
+    }
+    .article-image img {
+        width: 100%;
+        /* Make images responsive */
+        height: auto;
+        max-width: 300px;
+        /* Limit max width for readability */
+    }
+    /* Adjust footer for mobile */
+    .footer-content {
+        flex-direction: column;
+        /* Stack footer elements vertically */
+        text-align: center;
+        /* Center-align footer elements */
+        gap: 20px;
+        /* Add gap between sections */
+    }
+    .footer-links {
+        margin-right: 0;
+        /* Remove right margin */
+    }
+    .social-media {
+        flex-direction: row;
+        /* Arrange social icons in a row */
+        justify-content: center;
+        gap: 20px;
+        /* Increase spacing between icons */
+    }
+    .hidden-content {
+        display: none;
+    }
+    .read-more {
+        color: red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.summarize-hot-container {
+    max-width: 550px;
+    /* Maximum width of the container */
+    width: 100%;
+    /* Full width but up to max-width */
+    margin: 0 auto;
+    /* Centering the container */
+}
+
+.Title h2 {
+    font-size: 36px;
+}
+
+.Title[min-width~="400px"] h2 {
+    font-size: 18px;
+}
+
+.Title[min-width~="600px"] h2 {
+    padding: 55px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.Title[min-width~="700px"] h2 {
+    font-size: 34px;
+    color: red;
+}
+
+.politics-intro {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.politics-intro h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+    font-family: Core Sans N SC 65 Bold;
+}
+
+
+/* Import Base */
+
+@import url("https://unpkg.com/@getbase/base/core.css");
+
+/* Import Base Common */
+
+@import url("https://unpkg.com/@getbase/base/code.css");
+@import url("https://unpkg.com/@getbase/base/forms.css");
+@import url("https://unpkg.com/@getbase/base/tables.css");
+@import url("https://unpkg.com/@getbase/base/typography.css");
+@import url("https://unpkg.com/@getbase/base/headings.css");
+
+/* Add Your Website / App Styles */
+
+
+/* ... */
+
+
+/* Add Additional Modules */
+
+@import url("https://unpkg.com/@getbase/base/containers.css");
+@import url("https://unpkg.com/@getbase/base/grid.css");
+@import url("https://unpkg.com/@getbase/base/horizontal-spacers.css");
+@import url("https://unpkg.com/@getbase/base/vertical-spacers.css");
+@import url("https://unpkg.com/@getbase/base/spacers.css");
+@import url("https://unpkg.com/@getbase/base/display-helpers.css");
+@import url("https://unpkg.com/@getbase/base/flex-helpers.css");
+@import url("https://unpkg.com/@getbase/base/position-helpers.css");
+@import url("https://unpkg.com/@getbase/base/typography-helpers.css");

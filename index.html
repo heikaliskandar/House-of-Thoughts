@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/webicon.png" type="image/png">
+    <title>House of Thoughts</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="date-info">
+                <p id="current-date"></p>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="House of Thoughts" class="logo-icon">
+                </a>
+                <h2>Researching and Promoting Practical Ideas for a Smarter Future</h2>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="food.html">FOOD</a></li>
+                    <li><a href="politics.html">POLITICS</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="economy.html">ECONOMY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="others.html">OTHERS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="article-list">
+
+            <!-- Article  -->
+            <div class="article-item">
+                <div class="article-image">
+                    <img src="images/articleHOT3.jpg" alt="The Labubu">
+                </div>
+                <div class="article-content">
+                    <h3>“The Labubu Invasion” Labubu is taking over the world: over-consumerism and Hype Culture</h3>
+                    <p>By Isya Rohaili, 3/12/2024</p>
+                    <a href="others.html" class="read-more">Read More</a>
+
+                </div>
+            </div>
+
+
+
+            <!-- Article  -->
+            <div class="article-item">
+                <div class="article-image">
+                    <img src="images/articleHOT2.jpg" alt="PT3">
+                </div>
+                <div class="article-content">
+                    <h3>The Abolishment of UPSR and PT3: The Impacts to Our Education System</h3>
+                    <p>By Isya Rohaili, 3/12/2024</p>
+                    <a href="education.html" class="read-more">Read More</a>
+
+                </div>
+            </div>
+
+
+            <!-- Article  -->
+            <div class="article-item">
+                <div class="article-image">
+                    <img src="images/articleHOT1.jpg" alt="Trump's Victory">
+                </div>
+                <div class="article-content">
+                    <h3>Trump's Victory: Implications for U.S. Citizens, Global Politics, and Malaysia's Future</h3>
+                    <p>By Isya Rohaili, 3/12/2024</p>
+                    <a href="politics.html" class="read-more">Read More</a>
+
+                </div>
+            </div>
+
+
+
+            <!-- View All Publications Section -->
+            <section class="view-publications">
+                <a href="publications.html" class="view-publications-link">View all our publications.</a>
+            </section>
+            <hr class="custom-hr">
+            <section class="summarize-hot">
+                <div class="summarize-hot-container">
+                    <a href="index.html">
+                        <img src="images/logoremovebg.png" alt="House of Thoughts Logo" class="logo-icon" style="width: 100px; height: 50px;">
+                    </a>
+                    <p>House of Thoughts is a platform for exploring ideas, sharing insights, and advocating for practical solutions in finance, politics, education, and more. It’s where diverse perspectives shape meaningful change.</p>
+                    <a href="about.html" class="learn-more-link">Learn more about us.</a>
+                </div>
+            </section>
+
+
+
+            <script>
+                // JavaScript function to toggle the visibility of the hidden content
+                function toggleContent() {
+                    const hiddenText = document.getElementById('hidden-text');
+                    const readMoreLink = document.getElementById('read-more-link');
+
+                    if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                        // Show the hidden content and change the link to "Read Less"
+                        hiddenText.style.display = "inline";
+                        readMoreLink.textContent = "Read Less";
+                    } else {
+                        // Hide the content and change the link back to "Read More"
+                        hiddenText.style.display = "none";
+                        readMoreLink.textContent = "Read More";
+                    }
+                }
+
+                // Ensure hidden content is hidden initially on page load
+                document.addEventListener("DOMContentLoaded", () => {
+                    const hiddenText = document.getElementById('hidden-text');
+                    hiddenText.style.display = "none";
+                });
+            </script>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+
+
+            <div class="footer-info">
+                <p>SUBMIT YOUR OPINION!</p>
+                <form action="mailto:houseofthoughtsofficial@gmail.com" method="post" enctype="text/plain">
+                    <button type="submit">CLICK HERE</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="social-media">
+                    <a href="https://www.instagram.com/houseofthoughts_" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                    <a href="https://www.tiktok.com/@houseofthoughts1" target="_blank"><i class="fab fa-tiktok"></i> TIKTOK</a>
+                    <a href="https://twitter.com/HouseThoughts_" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="about.html">ABOUT </a></li>
+                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#">
+                    </i> Back to top<i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

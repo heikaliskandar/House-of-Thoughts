@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | House of Thoughts</title>
+    <link rel="icon" href="images/webicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .article-item-politics {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-image-politics1 img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        
+        blockquote {
+            background: #e8e8e8;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            font-style: italic;
+            margin: 20px 0;
+            color: #555;
+            font-size: 18px;
+        }
+        
+        .article-content-politics h2 {
+            margin-bottom: 5px;
+            /* Adjust spacing below the title */
+        }
+        
+        .article-content-politics .byline {
+            margin-bottom: 20px;
+            /* Increase spacing below the byline */
+            font-style: italic;
+            /* Optional: style for byline */
+            color: #000000;
+            /* Lighter text color for the byline */
+        }
+        
+        .article-content-politics hr {
+            border: 0;
+            /* Remove default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Spacing below the line */
+        }
+        
+        .article-title {
+            font-size: 40px;
+            /* Larger font size for the title */
+            margin-bottom: 0px;
+            /* Reduce space between title and byline */
+        }
+        
+        .byline {
+            font-size: 18px;
+            /* Smaller font size for the byline */
+            margin-top: 30px;
+            /* Space between byline and horizontal line */
+        }
+        
+        hr {
+            border: none;
+            /* Removes the default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Space after the line */
+        }
+        /* Assuming your title is within a <h2> tag, you can add a class or directly modify the <h2> tag in your CSS */
+        
+        h2 {
+            margin-top: 50px;
+            /* Increase or decrease as necessary */
+            margin-bottom: 40px;
+            /* Increase or decrease as necessary */
+            font-size: 38px;
+            /* Example size, adjust as needed */
+            /* Keeps the title centered */
+            font-family: "Quire Sans Pro Heavy";
+        }
+        
+        .article-content-politics p {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            /* Include a fallback font */
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            color: #333;
+            /* Example color, adjust as needed */
+            line-height: 1.8;
+            /* Adjust line spacing for better readability */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            /* Spacing after each paragraph */
+        }
+        
+        .article-content-politics h1 {
+            font-family: Mencken Std Text Regular;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 44px;
+        }
+        
+        .article-item-education {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-image-education img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        
+        .article-content-education h2 {
+            margin-bottom: 5px;
+            /* Adjust spacing below the title */
+        }
+        
+        .article-content-education .byline {
+            margin-bottom: 20px;
+            /* Increase spacing below the byline */
+            font-style: italic;
+            /* Optional: style for byline */
+            color: #000000;
+            /* Lighter text color for the byline */
+        }
+        
+        .article-content-education hr {
+            border: 0;
+            /* Remove default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Spacing below the line */
+        }
+        
+        .article-content-education p {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            /* Include a fallback font */
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            color: #333;
+            /* Example color, adjust as needed */
+            line-height: 1.8;
+            /* Adjust line spacing for better readability */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            /* Spacing after each paragraph */
+        }
+        
+        .article-content-education h1 {
+            font-family: Mencken Std Text Regular;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 44px;
+        }
+        
+        .article-item-others {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-image-others img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        
+        .article-content-others h2 {
+            margin-bottom: 5px;
+            /* Adjust spacing below the title */
+        }
+        
+        .article-content-others .byline {
+            margin-bottom: 20px;
+            /* Increase spacing below the byline */
+            font-style: italic;
+            /* Optional: style for byline */
+            color: #000000;
+            /* Lighter text color for the byline */
+        }
+        
+        .article-content-others hr {
+            border: 0;
+            /* Remove default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Spacing below the line */
+        }
+        
+        .article-content-others p {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            /* Include a fallback font */
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            color: #333;
+            /* Example color, adjust as needed */
+            line-height: 1.8;
+            /* Adjust line spacing for better readability */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            /* Spacing after each paragraph */
+        }
+        
+        .article-content-others h1 {
+            font-family: Mencken Std Text Regular;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 44px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="date-info">
+                <p id="current-date"></p>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="House of Thoughts" class="logo-icon">
+                </a>
+                <h2>Researching and Promoting Practical Ideas for a Smarter Future</h2>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="food.html">FOOD</a></li>
+                    <li><a href="politics.html">POLITICS</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="economy.html">ECONOMY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="others.html">OTHERS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="politics-intro">
+            <div class="politics-container">
+
+                <h1>ALL PUBLICATIONS</h1>
+
+            </div>
+        </section>
+        <div class="container">
+            <main>
+                <section class="article-list-others">
+                    <!-- Article 1 -->
+                    <div class="article-item-others">
+                        <div class="article-image-other">
+                            <img src="images/articleHOT3.jpg" alt="The Labubu" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        </div>
+                        <div class="article-content-others">
+                            <h1 class="article-title">“The Labubu Invasion” Labubu is taking over the world: over-consumerism and Hype Culture</h1>
+                            <p class="byline"><strong>By Isya Rohaili, 3/12/2024</strong></p>
+                            <hr>
+                            <!-- Horizontal line before the article starts -->
+
+                            <p>Exemplified by the Labubu craze, mindless consumerism shows just how wasteful, pricey, and unsustainable chasing fleeting trends can be. Like many hyped merchandise items, Labubu’s value is tied almost entirely to the buzz
+                                surrounding it. Its value, like that of many hyped products, is rooted less in intrinsic worth and more in the frenzy of social media and trend culture. This is driven by the desire for social validation and fear of missing
+                                out (FOMO), two powerful psychological drivers in the age of digital connectivity. However, as with any fad, the allure is temporary. Once the hype dies down—and it inevitably will—what was once highly coveted will likely
+                                become just another forgotten trinket, destined to gather dust on a shelf. With that, Labubu runs the risk of becoming just another victim of excessive consumerism—a representation of a society that values short-term excitement
+                                above long-term worth. This pattern raises important questions about the sustainability of such habits and the deeper societal implications of attaching value to what is, in essence, a product of hype.</p>
+
+                            <p>There is nothing inherently wrong with seeking out a unique or charming item to uplift your mood. Personal taste is subjective, and a small collectible can often bring genuine joy. However, it is crucial to approach such desires
+                                with mindfulness. Consider the following: Is this a genuine need, or am I merely succumbing to fleeting trends? Will this purchase offer lasting satisfaction or serve a practical purpose, or is it simply a momentary indulgence?
+                                By reflecting on these questions, individuals can make more intentional choices that align with their values and financial goals, fostering a healthier approach to consumer behavior.</p>
+
+                            <blockquote>
+                                "Material things are neither bad nor good," Burroughs comments. "It is the role and status they are accorded in one's life that can be problematic. The key is to find a balance: to appreciate what you have, but not at the expense of the things that really
+                                matter--your family, community and spirituality."
+                            </blockquote>
+
+                            <p>James E. Burroughs, PhD, an assistant professor of commerce at the McIntire School of Commerce at the University of Virginia, made remarks.</p>
+
+                            <p>Mindful consumerism is not about rejecting trends altogether but striking a meaningful balance. Avoiding the temptation to indulge in every new trend not only safeguards your financial stability but also plays a vital role
+                                in minimizing environmental impact and encouraging sustainable practices. By opting out of impulsive purchases driven by hype, individuals can redirect their resources toward more meaningful and lasting investments. This
+                                approach helps reduce the demand for overproduction, which is often a significant contributor to environmental degradation, while promoting a culture of thoughtful consumption that values quality over quantity.</p>
+
+                            <p>The "Labubu invasion" serves as a poignant reminder of the influence of hype culture and the need for deliberate, intentional decision-making. True fulfillment arises not from chasing collective trends but from cultivating
+                                a purposeful life, free from the unnecessary clutter of over-consumption.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="container">
+            <main>
+                <section class="article-list-education">
+                    <!-- Article 1 -->
+                    <div class="article-item-education">
+                        <div class="article-image-education1">
+                            <img src="images/articleHOT2.jpg" alt="PT3" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        </div>
+                        <div class="article-content-education">
+                            <h1 class="article-tittle">The Abolishment of UPSR and PT3: The Impacts to Our Education System</h1>
+                            <p class="byline"><strong>By Isya Rohaili, 3/12/2024</strong></p>
+                            <hr>
+                            <!-- Horizontal line before the article starts -->
+
+
+                            <p>The COVID-19 pandemic served as an inflection point for countless societal systems, and Malaysia's education sector was no exception. Amidst the unprecedented disruption wrought by the health crisis, the government made the
+                                momentous decision to cancel two cornerstone assessments—the Ujian Penilaian Sekolah Rendah (UPSR) and Pentaksiran Tingkatan 3 (PT3), back in 2021. <span class="quote">"Furthermore, the outbreak of Covid-19 in the country is not fully contained yet,"</span>                                a statement by the Former Senior Minister Education, Datuk Dr. Mohd Radzi Jidin, which reflected the abolishment of the two major school examinations. Originally conceived as an exigent measure to mitigate the spread of
+                                the virus, the abolishment has now been rendered permanent, a development that has precipitated polarizing discourse among educators, policymakers, and parents.</p>
+
+                            <p>For decades, UPSR and PT3 stood as bastions of Malaysia’s standardized education framework. UPSR, administered at the culmination of primary school, functioned as a definitive gauge of students’ foundational competencies, determining
+                                their placement in secondary institutions. PT3, on the other hand, served as a critical mid-point appraisal of students' academic aptitude and readiness to embark on the rigors of upper secondary education. The absence
+                                of these examinations has raised profound questions about the future trajectory of Malaysia’s academic ecosystem. While UPSR and PT3 have historically played important roles in Malaysia’s education system, their relevance
+                                has diminished in light of changing educational priorities.</p>
+
+                            <p>The move away from these exams marks a shift towards a more inclusive, dynamic, and holistic approach to student assessment, better suited to preparing students for the demands of a rapidly changing world. Education Minister
+                                Fadhlina Sidek stated that the PT3 and the UPSR are no longer applicable in evaluating students' academic performance. <span class="quote">“Instead, we are giving the time and space for School Based Assessment (PBS) to function effectively because everything that happens in education must reflect the National Education Philosophy,”</span>                                she said when winding up the debate on the 2025 supply bill at the Policy Stage for Ministry Of Education at the Dewan Rakyat last month. The Education Ministry will also introduce seven domains—personal development, communication,
+                                responsibility, digital fluency, diverse literacy, thinking skills, and lifelong learning—in the 2027 School Curriculum to promote a balanced lifestyle.</p>
+
+                            <blockquote>Modern education emphasizes holistic student development, focusing not just on academic performance but also on critical thinking, creativity, and emotional intelligence. UPSR and PT3, as standardized tests, primarily evaluated
+                                rote memorization and did not adequately assess these broader skills.</blockquote>
+
+                            <p>According to Prof. Mohd Fadzil Abdul Rahman of Universiti Malaysia Sarawak (Unimas), the PT3 and the UPSR for Year Six students only focus on the <span class="quote">"Three Rs: Reception, Retention, and Recollection."</span>                                They do not assist students in developing their critical thinking and communication abilities. <span class="quote">“The downside of this is that students do not learn to understand, but resort to memorisation to get good marks.”</span>                                he added.</p>
+
+                            <p>Proponents of this seismic shift argue that it heralds the dawn of a more progressive and holistic approach to student evaluation, aligning with global pedagogical trends that emphasize critical thinking, creativity, and collaborative
+                                problem-solving over rote learning.</p>
+
+                            <p>Yet, this assurance has done little to placate skeptics who foresee an erosion of educational rigor and equity. Detractors posit that the removal of these pivotal assessments risks engendering disparities in academic standards,
+                                particularly in rural and underprivileged schools where infrastructural deficiencies and teaching quality are perennial concerns.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+
+        <div class="container">
+            <main>
+                <section class="article-list-politics">
+                    <div class="article-item-politics">
+                        <div class="article-image-politics1">
+                            <img src="images/articleHOT1.jpg" alt="Trump's Victory" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                        </div>
+
+                        <div class="article-content-politics">
+                            <h1 class="article-title">Trump's Victory: Implications for U.S. Citizens, Global Politics, and Malaysia's Future</h1>
+                            <p class="byline"><strong>By Isya Rohaili, 3/12/2024</strong></p>
+                            <hr>
+                            <!-- Horizontal line before the article starts -->
+
+                            <p>Trump’s stance on contentious issues like immigration, healthcare, racial relations, and climate change has deepened divisions within the U.S., leaving many Americans feeling more alienated along ideological lines. A victory
+                                for Trump in the earliest election could have sweeping impacts, both domestically and globally, with significant consequences for Malaysia as well. The implications could reach far beyond U.S. borders, impacting international
+                                norms and shaping the policies of allied and neighbouring nations alike.</p>
+
+                            <blockquote>
+                                "The nation and the world can expect the incoming Trump administration to take a wrecking ball to global climate diplomacy," said Rachel Cleetus, Policy Director and Lead Economist for the Union of Concerned Scientists’ Climate and Energy Program.
+                            </blockquote>
+
+                            <p>This sentiment is echoed in Trump’s "Drill, baby, drill" slogan, which encapsulates his push for greater U.S. energy independence through the expansion of oil and gas extraction. Despite increasing calls for a shift to cleaner
+                                energy, there is little indication that Trump's administration will reduce America’s reliance on fossil fuels. In fact, he has pledged to intensify their use and eliminate all wind turbines across the country on the "first
+                                day" of his presidency, signalling a clear commitment to prioritizing fossil fuels over renewable energy sources. With the world already grappling with environmental challenges, Trump’s policies could undermine collective
+                                global efforts to address climate change and exacerbate existing tensions over environmental responsibility.</p>
+
+                            <h2>Proposed Policies and Their Implications</h2>
+
+                            <p>A glimpse into proposed policies reveals a landscape where foundational freedoms across the U.S. could be reshaped. Trump has pledged to reinstate his prior travel ban on refugees and travellers from several predominantly Muslim
+                                countries. Additionally, he announced plans for what he calls the 'largest deportation program in history,' aiming to expel 'maybe as many as 20 million' people from the United States. These measures have drawn sharp criticism
+                                from human rights advocates and immigration groups, who warn of deep social and humanitarian impacts.</p>
+
+                            <p>For U.S. citizens, such a win could result in a rollback of civil liberties, with restrictions on abortion potentially expanding nationwide—impacting even blue states. One of the more far-reaching proposals from Project 2025,
+                                a conservative policy plan, suggests using the Comstock Act of 1873, which bans the mailing of abortion-related materials, to outlaw the shipment of abortion pills. This could severely limit access to medication abortions,
+                                undermining reproductive rights for millions of Americans.</p>
+
+                            <h2>LGBTQ+ Rights Under Threat</h2>
+
+                            <p>Meanwhile, an atmosphere of heightened prejudice might be exacerbated by the potential to rethink regulations that target the LGBTQ+ population. Amid growing concerns over the future of LGBTQ+ rights, Trump's administration
+                                may revoke important safeguards for LGBTQ+ people, including prohibitions on discrimination in the workplace, the freedom to marry, and even access to healthcare. A notable example is Trump's tweet on July 26, 2017, announcing
+                                that the U.S. military would no longer "accept or allow transgender individuals to serve in any capacity."</p>
+
+                            <h2>Impact on Malaysia</h2>
+
+                            <blockquote>
+                                "I think any country in the world, given the influence that the US has on the global economy, would have carried out some sort of due diligence on whatever impacts a change in US administration would have on local economy and administration." - Mohd Rafizi
+                                Ramli, Minister of Economy.
+                            </blockquote>
+
+                            <p>In 2022, trade in goods and services between the two nations reached $78 billion, with the U.S. also standing as Malaysia's largest foreign investor, creating over 312,000 Malaysian jobs in the past decade. As the U.S. heads
+                                toward another presidential election, the potential impact on Malaysia's political and economic landscape is significant, underscoring the importance of monitoring developments in the race for the White House.</p>
+
+                            <p>Trump’s policies favouring traditional energy sectors could benefit Malaysia's oil and gas industry, according to Moomoo Malaysia’s Senior Equity and Derivatives Dealer, Ahmad Fidauddin. Increased U.S. support for fossil fuels
+                                and relaxed regulations may drive oil demand, aligning well with Malaysia’s strengths in the sector. "This will help the FTSE Bursa Malaysia (FBM) Energy Index, currently at around 840.90 points, as oil demand is expected
+                                to rise," said Fidauddin.</p>
+
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
+
+
+
+        <footer class="footer">
+            <div class="footer-content">
+
+
+                <div class="footer-info">
+                    <p>SUBMIT YOUR OPINION!</p>
+                    <form action="mailto:houseofthoughtsofficial@gmail.com" method="post" enctype="text/plain">
+                        <button type="submit">CLICK HERE</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/houseofthoughts_" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                        <a href="https://www.tiktok.com/@houseofthoughts1" target="_blank"><i class="fab fa-tiktok"></i> TIKTOK</a>
+                        <a href="https://twitter.com/HouseThoughts_" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a>
+                    </div>
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="about.html">ABOUT </a></li>
+                            <li><a href="#">TERMS & CONDITIONS</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="back-to-top">
+                    <a href="#">
+                        </i> Back to top<i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>

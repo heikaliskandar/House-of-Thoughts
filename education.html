@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics | House of Thoughts</title>
+    <link rel="icon" href="images/webicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/core.css">
+    <!-- Base Common -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/code.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/forms.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/tables.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/headings.css">
+    <!-- Add Your Website / App Stylesheet -->
+    <!-- ... -->
+    <!-- Add Additional Modules -->
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/containers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/horizontal-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/vertical-spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/spacers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/display-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/flex-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/position-helpers.css">
+    <link rel="stylesheet" href="https://unpkg.com/@getbase/base/typography-helpers.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .top-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .top-nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        .logo-icon {
+            width: 100px;
+            height: auto;
+        }
+        
+        .article-item-education {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .article-image-education img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        
+        blockquote {
+            background: #e8e8e8;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            font-style: italic;
+            margin: 20px 0;
+            color: #555;
+            font-size: 18px;
+        }
+        
+        .article-content-education h2 {
+            margin-bottom: 5px;
+            /* Adjust spacing below the title */
+        }
+        
+        .article-content-education .byline {
+            margin-bottom: 20px;
+            /* Increase spacing below the byline */
+            font-style: italic;
+            /* Optional: style for byline */
+            color: #000000;
+            /* Lighter text color for the byline */
+        }
+        
+        .article-content-education hr {
+            border: 0;
+            /* Remove default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Spacing below the line */
+        }
+        
+        .article-title {
+            font-size: 40px;
+            /* Larger font size for the title */
+            margin-bottom: 0px;
+            /* Reduce space between title and byline */
+        }
+        
+        .byline {
+            font-size: 18px;
+            /* Smaller font size for the byline */
+            margin-top: 30px;
+            /* Space between byline and horizontal line */
+        }
+        
+        hr {
+            border: none;
+            /* Removes the default border */
+            height: 1px;
+            /* Line thickness */
+            background-color: #ccc;
+            /* Line color */
+            margin-bottom: 20px;
+            /* Space after the line */
+        }
+        /* Assuming your title is within a <h2> tag, you can add a class or directly modify the <h2> tag in your CSS */
+        
+        h2 {
+            margin-top: 50px;
+            /* Increase or decrease as necessary */
+            margin-bottom: 40px;
+            /* Increase or decrease as necessary */
+            font-size: 38px;
+            /* Example size, adjust as needed */
+            /* Keeps the title centered */
+            font-family: "Quire Sans Pro Heavy";
+        }
+        
+        .article-content-education p {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            /* Include a fallback font */
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            color: #333;
+            /* Example color, adjust as needed */
+            line-height: 1.8;
+            /* Adjust line spacing for better readability */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            /* Spacing after each paragraph */
+        }
+        
+        .article-content-education h1 {
+            font-family: Mencken Std Text Regular;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="date-info">
+                <p id="current-date"></p>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="House of Thoughts" class="logo-icon">
+                </a>
+                <h2>Researching and Promoting Practical Ideas for a Smarter Future</h2>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="food.html">FOOD</a></li>
+                    <li><a href="politics.html">POLITICS</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="economy.html">ECONOMY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html#article-list">OTHERS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="politics-intro">
+            <div class="politics-container">
+
+                <h1>EDUCATION</h1>
+
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="article-list-education">
+                <!-- Article 1 -->
+                <div class="article-item-education">
+                    <div class="article-image-education1">
+                        <img src="images/articleHOT2.jpg" alt="PT3" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                    </div>
+                    <div class="article-content-education">
+                        <h1 class="article-tittle">The Abolishment of UPSR and PT3: The Impacts to Our Education System</h1>
+                        <p class="byline"><strong>By Isya Rohaili, 3/12/2024</strong></p>
+                        <hr>
+                        <!-- Horizontal line before the article starts -->
+
+
+                        <p>The COVID-19 pandemic served as an inflection point for countless societal systems, and Malaysia's education sector was no exception. Amidst the unprecedented disruption wrought by the health crisis, the government made the momentous
+                            decision to cancel two cornerstone assessments—the Ujian Penilaian Sekolah Rendah (UPSR) and Pentaksiran Tingkatan 3 (PT3), back in 2021. <span class="quote">"Furthermore, the outbreak of Covid-19 in the country is not fully contained yet,"</span>                            a statement by the Former Senior Minister Education, Datuk Dr. Mohd Radzi Jidin, which reflected the abolishment of the two major school examinations. Originally conceived as an exigent measure to mitigate the spread of the
+                            virus, the abolishment has now been rendered permanent, a development that has precipitated polarizing discourse among educators, policymakers, and parents.</p>
+
+                        <p>For decades, UPSR and PT3 stood as bastions of Malaysia’s standardized education framework. UPSR, administered at the culmination of primary school, functioned as a definitive gauge of students’ foundational competencies, determining
+                            their placement in secondary institutions. PT3, on the other hand, served as a critical mid-point appraisal of students' academic aptitude and readiness to embark on the rigors of upper secondary education. The absence of these
+                            examinations has raised profound questions about the future trajectory of Malaysia’s academic ecosystem. While UPSR and PT3 have historically played important roles in Malaysia’s education system, their relevance has diminished
+                            in light of changing educational priorities.</p>
+
+                        <p>The move away from these exams marks a shift towards a more inclusive, dynamic, and holistic approach to student assessment, better suited to preparing students for the demands of a rapidly changing world. Education Minister Fadhlina
+                            Sidek stated that the PT3 and the UPSR are no longer applicable in evaluating students' academic performance. <span class="quote">“Instead, we are giving the time and space for School Based Assessment (PBS) to function effectively because everything that happens in education must reflect the National Education Philosophy,”</span>                            she said when winding up the debate on the 2025 supply bill at the Policy Stage for Ministry Of Education at the Dewan Rakyat last month. The Education Ministry will also introduce seven domains—personal development, communication,
+                            responsibility, digital fluency, diverse literacy, thinking skills, and lifelong learning—in the 2027 School Curriculum to promote a balanced lifestyle.</p>
+
+                        <blockquote>Modern education emphasizes holistic student development, focusing not just on academic performance but also on critical thinking, creativity, and emotional intelligence. UPSR and PT3, as standardized tests, primarily evaluated
+                            rote memorization and did not adequately assess these broader skills.</blockquote>
+
+                        <p>According to Prof. Mohd Fadzil Abdul Rahman of Universiti Malaysia Sarawak (Unimas), the PT3 and the UPSR for Year Six students only focus on the <span class="quote">"Three Rs: Reception, Retention, and Recollection."</span> They
+                            do not assist students in developing their critical thinking and communication abilities. <span class="quote">“The downside of this is that students do not learn to understand, but resort to memorisation to get good marks.”</span>                            he added.</p>
+
+                        <p>Proponents of this seismic shift argue that it heralds the dawn of a more progressive and holistic approach to student evaluation, aligning with global pedagogical trends that emphasize critical thinking, creativity, and collaborative
+                            problem-solving over rote learning.</p>
+
+                        <p>Yet, this assurance has done little to placate skeptics who foresee an erosion of educational rigor and equity. Detractors posit that the removal of these pivotal assessments risks engendering disparities in academic standards,
+                            particularly in rural and underprivileged schools where infrastructural deficiencies and teaching quality are perennial concerns.</p>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+
+
+            <div class="footer-info">
+                <p>SUBMIT YOUR OPINION!</p>
+                <form action="mailto:houseofthoughtsofficial@gmail.com" method="post" enctype="text/plain">
+                    <button type="submit">CLICK HERE</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="social-media">
+                    <a href="https://www.instagram.com/houseofthoughts_" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                    <a href="https://www.tiktok.com/@houseofthoughts1" target="_blank"><i class="fab fa-tiktok"></i> TIKTOK</a>
+                    <a href="https://twitter.com/HouseThoughts_" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="about.html">ABOUT </a></li>
+                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#">
+                    </i> Back to top<i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
